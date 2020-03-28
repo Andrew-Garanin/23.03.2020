@@ -14,15 +14,15 @@ class MyComplex
             else 
                 "i*#{@imaginary.abs}"
             end
-        end
-        if @imaginary<0
-            if @real!=0
+        
+        elsif @imaginary<0
+            if @real>0
                 "#{@real}-i*#{@imaginary.abs}"
             else
                 "-i*#{@imaginary.abs}"
             end
-        end
-        if @imaginary==0
+        
+    elsif @imaginary==0
             "#{@real}"
         end
     end
